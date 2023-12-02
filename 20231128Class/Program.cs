@@ -40,6 +40,8 @@ masina.Name = "tutu";
 masina.Drive();
 
 
+//Dictionarry
+
 Dictionary<string, int> sarasas = new Dictionary<string, int>();
 sarasas.Add("Jonas", 35);
 sarasas.Add("Petras", 20);
