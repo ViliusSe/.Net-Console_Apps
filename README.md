@@ -10,13 +10,13 @@ Sukurti klase ShopItem su laukais Name, Description, Price, Expiration ir Tag. S
 Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus ir atskirai Tag reiksmes.
 
 
-### 2023-11-28 Class Task (Continues from 2023-11-27)
+### 2023-11-28 Class Task - Simple data manipulation
 
 1. Sukurkite programą, kuri priimtų tekstą (eilėraštis arba dainos žodžiai). Tada užklaustų vartotojo kokį žodį norėtų pakeisti į kitą vartotojo paduotą žodį. Atnaujintą tekstą turėtų išvesti į ekraną.
 2. Sukurkite programą, kuri priima vartotojo įvestą žodį ir patikrina, ar jis yra "labas". Jei taip, atspausdinkite žodį atbulai naudodami metodą Reverse(). Jei žodis nesutampa su "labas", atspausdinkite žodį taip, kaip jis buvo įvestas.
 3. Sukurkite metodą kuris patikrina ar atsiųstas tekstas yra skaičius ir gražina skaičių (kaip int) ir atsakyma ar teisinga (is esmes sukurkite savo int.TryParse metoda) NEGALIMA NAUDOTI TRYPARSE
 
-###2023-11-28 Evening Homework - Using Interfaces and Services
+### 2023-11-28 Evening Homework - Using INTERFACES and SERIVCES - (Continues from 2023-11-27)
 
 1. Sukurti objektą su šitais laukeliais:
  - Name
