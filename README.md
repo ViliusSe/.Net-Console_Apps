@@ -33,7 +33,7 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius <span style="color:red">Nebaigta</span>.
 
 ### 2023-11-28 Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
-<span style="color:red">Uzduoties kodas padidintas pagal funkcionaluma ir nebaigtas</span>.
+**<span style="color:red">Uzduoties kodas padidintas pagal funkcionaluma ir nebaigtas</span>.**
 1. Sukurti servicus ir juos panaudoti veiksmams su ShopItems/Tags.
 2. Sukurti servic Failu apdorojimui (skaitymas/rasymas ir t.t).
  ! Servisus kurti butinai su interface.
