@@ -12,19 +12,31 @@ namespace _20231128HomeWork.Services
 {
     internal class FileService : IFileService
     {
-        public void ReadFile()
+        public void ReadFileShop()
         {
-            File.ReadAllText(@"C:/Users/v.senkus/Desktop/Cart.txt");
+            Console.WriteLine(File.ReadAllText(@"C:/Users/v.senkus/Desktop/Shop.txt"));
+        }
+
+        public void ReadFileCart()
+        {
+            try
+            {
+                Console.WriteLine(File.ReadAllText(@"C:/Users/v.senkus/Desktop/Cart.txt"));
+            }
+            catch
+            {
+                Console.WriteLine("Your cart is empty or something went wrong");
+            }
         }
 
         public void WriteToFile(List<ShopItemService> list)
         {
-            
+
         }
 
         internal void WriteToFile(List<ShopItem> list)
         {
-            string data = JsonSerializer.Serialize(list, new JsonSerializerOptions { WriteIndented = true});
+            string data = JsonSerializer.Serialize(list, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(@"C:/Users/v.senkus/Desktop/Cart.txt", data);
         }
     }

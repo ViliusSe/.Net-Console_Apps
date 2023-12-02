@@ -1,7 +1,11 @@
-﻿using _20231128HomeWork.Models;
+﻿using _20231128HomeWork.Interfaces;
+using _20231128HomeWork.Models;
 using _20231128HomeWork.Services;
 using System;
 using System.IO;
+
+IFileService _fileService = new FileService();
+_fileService.ReadFile();
 
 ShopItemService shopItemService = new ShopItemService();
 FileService fileService = new FileService();

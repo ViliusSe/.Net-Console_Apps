@@ -9,7 +9,11 @@ namespace _20231128HomeWork.Interfaces
 {
     internal interface IFileService
     {
+        public void ReadFileShop();
+        public void ReadFileCart();
         public void WriteToFile(List<ShopItemService> data);
-        public void ReadFile();
+        public void WriteToFileCart(Cart data);
+
+
     }
 }

@@ -11,10 +11,12 @@ namespace _20231128HomeWork.Services
 {
     internal class ShopItemService : IShopItemService
     {
+
         private List<ShopItem> allItems { get; set; } = new List<ShopItem>();
 
         public void MakeShoppingItemsList()
         {
+            
             foreach (string line in File.ReadAllLines(@"C:/Users/v.senkus/Desktop/Shop.txt"))
             {
                 string[] parts = line.Split(", ");
