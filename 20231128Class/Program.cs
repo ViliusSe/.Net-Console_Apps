@@ -1,24 +1,22 @@
 ﻿using _20231128Class;
+using _20231128Class.Array;
 using _20231128Class.Extention;
 using _20231128Class.Paveldejimas;
 
+
+Console.WriteLine("Kelimas kvadratu");
 List<int> skaiciai = new List<int> { 1, 2, 3, 4, };
 
 skaiciai.Select(sk => sk * sk).ToList().ForEach(sk => Console.WriteLine(sk));
 
 
-
+Console.WriteLine("neigiamu atrinkimas");
 List<int> numbers = new List<int> { 1, 2, -3, -4, 5, -6 };
 
 numbers.Where(sk => sk < 0).ToList().ForEach(sk => Console.WriteLine(sk));
 
 
 
-//Inheritance
-
-//Car masina = new Car();
-//masina.Name = "tutu";
-//Console.WriteLine(masina.Drive());
 
 
 
@@ -30,6 +28,16 @@ Console.WriteLine(number.IsPositive());
 string tekstas = "asdk asdkl";
 Console.WriteLine(tekstas.HasSpace());
 
+//5 
+int[,] masyvas = { { 1, 2, 3 }, { 2, 4, 1 } };
+DvigubasMasyvas dvigubasMasyvas = new DvigubasMasyvas();
+dvigubasMasyvas.RepeatingNumbers(masyvas);
+
+//Inheritance
+
+Car masina = new Car();
+masina.Name = "tutu";
+masina.Drive();
 
 
 Dictionary<string, int> sarasas = new Dictionary<string, int>();

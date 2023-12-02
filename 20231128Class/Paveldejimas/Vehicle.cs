@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _20231128Class.Paveldejimas
 {
     //sealed internal class Vehicle - nepaveldima
-    internal class Vehicle
+    class Vehicle
     {
         public void Drive()
         {

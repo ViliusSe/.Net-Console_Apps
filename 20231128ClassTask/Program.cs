@@ -1,6 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 
+//1. TEKSTO KEITIMAS
+Console.BackgroundColor = ConsoleColor.Green;
+Console.WriteLine("TEKSTO KEITIMAS");
+Console.BackgroundColor = ConsoleColor.Black;
+
 Console.WriteLine("Noriu eilerascio");
 String eilerastis = Console.ReadLine();
 Console.WriteLine("koki zodi pakeisti?");
@@ -8,27 +13,30 @@ String zodis = Console.ReadLine();
 Console.WriteLine("i ka pakeisti?");
 String pakeistukas = Console.ReadLine();
 
-//String Change(String text, String word, String repalace)
-//{
-//    String[] split = Regex.Split(text, " ");
-//    foreach (String s in split)
-//    {
-//        if s == word{
-//            s = repalace;
-//        }
-//    }
+            // Other implementation form
 
-//    foreach (String s in split)
-//    {
-//        text += s;
-//    }
-//    return text;
-//}
+        //String Change(String text, String word, String repalace)
+        //{
+        //    String[] split = Regex.Split(text, " ");
+        //    foreach (String s in split)
+        //    {
+        //        if s == word{
+        //            s = repalace;
+        //        }
+        //    }
 
-//Console.WriteLine(Change(eilerastis, zodis, pakeistukas));
+        //    foreach (String s in split)
+        //    {
+        //        text += s;
+        //    }
+        //    return text;
+        //}
+
+        //Console.WriteLine(Change(eilerastis, zodis, pakeistukas));
 
 Console.WriteLine(eilerastis.Replace(zodis, pakeistukas));
 
+//2. ZODZIO APSUKIMAS
 // priimti zodi, tikrinti ar jis "labas", -> true -> apsukti atbulai, if false -> zodis. 
 
 Console.WriteLine("ivesti zodi");
@@ -45,6 +53,9 @@ void Reverse(String word)
         Console.WriteLine(word);
     }
 }
+
+
+//3. INT PARSINIMAS SU KLAIDUPAIESKA
 
 Console.Write("give me number");
 String number = Console.ReadLine();

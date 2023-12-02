@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _20231128Class.Extention
 {
 
-    internal static class Class1
+    internal static class TrueFalse
     {
         static int number { get; set; }
 
