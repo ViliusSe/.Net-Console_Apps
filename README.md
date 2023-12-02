@@ -32,7 +32,7 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 4. write if text has spaces " ".
 5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius  ----------------------------------------------
 
-### 2023-11-28 Evening Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
+### 2023-11-28 Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 
 1. Sukurti servicus ir juos panaudoti veiksmams su ShopItems/Tags.
 2. Sukurti servic Failu apdorojimui (skaitymas/rasymas ir t.t).
