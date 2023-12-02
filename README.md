@@ -26,6 +26,11 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 2. Sukurkite programą, kuri priima vartotojo įvestą žodį ir patikrina, ar jis yra "labas". Jei taip, atspausdinkite žodį atbulai naudodami metodą Reverse(). Jei žodis nesutampa su "labas", atspausdinkite žodį taip, kaip jis buvo įvestas.
 3. Sukurkite metodą kuris patikrina ar atsiųstas tekstas yra skaičius ir gražina skaičių (kaip int) ir atsakyma ar teisinga (is esmes sukurkite savo int.TryParse metoda) NEGALIMA NAUDOTI TRYPARSE
 
+### 2023-11-28 Class - ARRAY, CONDOTIONS, LINQ, LAMBDA, INHERITANCE
+
+1. 
+- Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius
+
 ### 2023-11-28 Evening Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 
 1. Sukurti servicus ir juos panaudoti veiksmams su ShopItems/Tags.
@@ -44,8 +49,6 @@ servicuose turi buti igyvendinti sitie metodai:
  ! Console messages should be logical
 3. Papildomai sukurti naują service, įrašymui ir nuskaitymui iš JSON vietoje Txt failo
 
-### 2023-11-29 Class Work
-Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius
 
 ### 2023-11-30 Class Task
 Sukurkite klasę ProgressBar kuri turėtų int lauką progress. Jūsų programėles main metodas turėtų sukurti ProgressBar tipo objektą ir vykdyti ciklą, kuris didintų progress lauko reikšmę vienetu kas sekundę, tol, kol reikšmė pasiekia 100. Sukurkite kitą giją, kuri kas 3 sekundes į konsolę išvestų ProgressBar objekto, progress lauko reikšmę, tol, kol programa veikia.
