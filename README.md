@@ -4,7 +4,7 @@ Repository storing C# Console Application code examples mainly for syntax review
 
 ## TASKS LIST
 
-### 2023-11-27 HomeWork - Class, Object, List<...>, working with Files
+### 2023-11-27 HomeWork - CLASS, OBJECT, LIST<...>, working with FILES
 
 Sukurti klase ShopItem su laukais Name, Description, Price, Expiration ir Tag. Sukurti klase Tag. Klasėje ShopItem Tag turi būti List<Tag> tipo. Sukurti metodą išvedantį ShopItem objekto visus parametrus į ekraną.
 Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus ir atskirai Tag reiksmes.
