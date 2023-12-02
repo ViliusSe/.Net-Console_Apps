@@ -30,7 +30,7 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 
 1. write if number is possitive TRUE/FALSE.
 4. write if text has spaces " ".
-5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius  <span style="color:red">Nebaigta</span>.
+5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius <span style="color:red">Nebaigta</span>.
 
 ### 2023-11-28 Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 <span style="color:red">Uzduoties kodas padidintas pagal funkcionaluma ir nebaigtas</span>.
@@ -51,7 +51,7 @@ servicuose turi buti igyvendinti sitie metodai:
 3. Papildomai sukurti naują service, įrašymui ir nuskaitymui iš JSON vietoje Txt failo
 
 
-### 2023-11-30 Class Task
+### 2023-11-30 Class Task - ASYNC AWAIT TASK
 Sukurkite klasę ProgressBar kuri turėtų int lauką progress. Jūsų programėles main metodas turėtų sukurti ProgressBar tipo objektą ir vykdyti ciklą, kuris didintų progress lauko reikšmę vienetu kas sekundę, tol, kol reikšmė pasiekia 100. Sukurkite kitą giją, kuri kas 3 sekundes į konsolę išvestų ProgressBar objekto, progress lauko reikšmę, tol, kol programa veikia.
 
 ### 2023-11-30 Home Work
