@@ -5,10 +5,20 @@ Repository storing C# Console Application code examples mainly for syntax review
 ## TASKS LIST
 
 ### 2023-11-27 HomeWork - CLASS, OBJECT, LIST<...>, working with FILES
-
-Sukurti klase ShopItem su laukais Name, Description, Price, Expiration ir Tag. Sukurti klase Tag. Klasėje ShopItem Tag turi būti List<Tag> tipo. Sukurti metodą išvedantį ShopItem objekto visus parametrus į ekraną.
+ 
 Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus ir atskirai Tag reiksmes.
-
+1. Sukurti klase ShopItem su laukais:
+ - Name
+ - Description.
+ - Tags . (for example: food, sweets, unhealthy)
+ - Price
+ - Expiration
+2. Sukurti Tag, kaip nauja objektą (Tag klasę/tipą), Tag turi turėti du parametrus ID ir Name.
+   ! Klasėje ShopItem Tag turi būti List<Tag> tipo. Įdėti, bent du objektus į sąrašą.
+3. Sukurti visoms klasems konstruktorius.
+3. Sukurti metodą išvedantį ShopItem objekto visus parametrus į ekraną.
+4. Atspausdinti šiuos du objektus į failą naudojant ToString metodą.
+5. Sukurti metodą, kuris viduje esančius tag palygina. Ir išveda naują sąrašą tik tų tagų kurie sutampa, per abu produktus.
 
 ### 2023-11-28 Class Task - Simple data manipulation
 
@@ -16,51 +26,23 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 2. Sukurkite programą, kuri priima vartotojo įvestą žodį ir patikrina, ar jis yra "labas". Jei taip, atspausdinkite žodį atbulai naudodami metodą Reverse(). Jei žodis nesutampa su "labas", atspausdinkite žodį taip, kaip jis buvo įvestas.
 3. Sukurkite metodą kuris patikrina ar atsiųstas tekstas yra skaičius ir gražina skaičių (kaip int) ir atsakyma ar teisinga (is esmes sukurkite savo int.TryParse metoda) NEGALIMA NAUDOTI TRYPARSE
 
-### 2023-11-28 Evening Homework - Using INTERFACES and SERIVCES - (Continues from 2023-11-27)
+### 2023-11-28 Evening Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 
-1. Sukurti objektą su šitais laukeliais:
- - Name
- - Description.
- - Tags . (for example: food, sweets, unhealthy)
- - Price
-Įdėti, bent du objektus į sąrašą/
-Atspausdinti šiuos du objektus į failą naudojant ToString metodą.
- 2. Sukurti metodą, kuris viduje esančius tag palygina. Ir išveda naują sąrašą tik tų tagų kurie sutampa, per visus objektus
- 3.Įsiaiškinti, kas yra konstruktorius ir padaryti objekto parametrų priskyrimą per jį.
- 4. Sukurti Tag, kaip nauja objektą (Tag klasę/tipą) ir atlikti ankščiau įvardytus veiksmus su juo, Tag turi turėti du parametrus ID ir Name.
- 5****Extra hard for bonus points. Sukurti servicą ir jį panaudoti veiksmams su objektu/tagais.
-
-Butinai sukurkite du servicus ir Shopitem ir Failu apdorojimui (skaitymas/rasymas ir t.t) Butinai su interface.
- 
- 
-turi buti igyvendinti sitie metodai servicuose.
- 
-Item service turi buti listas, kuris egzistuoja visos programos metu ir ji turi buti privatus
- 
-Programai baigus darba jis isvedamas i faila.
- 
-programai pradejus darba uzkraunamas is failo
- 
-1. "Add <itemname> <price>"
-2. "Remove <Itemname>" (shop items)
-3. "Show balance" -> displays your balance (initial balance is 20 euros)
-4. "Topup <money>" -> topup your balance;
-5. "Buy <itemname>" -> buys an item if the buyer has enough money.
-6.. "Display items" -> displays all items that you have bought.
- 
-Turi visos klaidos buti pagautos.
- 
-The information should be saved into a file. 
-That means when you restart the information does not dissappear.
- 
-Console messages should be logical
-
-Atkreipkitė dėmesį, kad Remove, atliktų tokį veiksmą:
-Command 'remove <itemName>' -> would remove the item.
-If item does not exist, display '<itemName> not found';
-If Item quantity is more than 1, just reduce the quantity.
- 
-Jeigu kas baigs ankščiau, norėčiau, kad sukurtumėte naują service, įrašymui ir nuskaitymui iš JSON vietoje Txt failo
+1. Sukurti servicus ir juos panaudoti veiksmams su ShopItems/Tags.
+2. Sukurti servic Failu apdorojimui (skaitymas/rasymas ir t.t).
+ ! Servisus kurti butinai su interface.
+ ! Item service turi buti listas, kuris egzistuoja visos programos metu ir ji turi buti privatus. Programai baigus darba jis isvedamas i faila. Programai pradejus darba uzkraunamas is failo
+  (The information should be saved into a file. That means when you restart the information does not dissappear.)
+servicuose turi buti igyvendinti sitie metodai:
+- "Add <itemname> <price>"
+- "Remove <Itemname>" (shop items) -> would remove the item. If item does not exist, display '<itemName> not found', if Item quantity is more than 1, just reduce the quantity.
+- "Show balance" -> displays your balance (initial balance is 20 euros)
+- "Topup <money>" -> topup your balance;
+- "Buy <itemname>" -> buys an item if the buyer has enough money.
+- "Display items" -> displays all items that you have bought.
+ ! visos klaidos turi buti pagautos.
+ ! Console messages should be logical
+3. Papildomai sukurti naują service, įrašymui ir nuskaitymui iš JSON vietoje Txt failo
 
 ### 2023-11-29 Class Work
 Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius
