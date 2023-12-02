@@ -26,10 +26,11 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 2. Sukurkite programą, kuri priima vartotojo įvestą žodį ir patikrina, ar jis yra "labas". Jei taip, atspausdinkite žodį atbulai naudodami metodą Reverse(). Jei žodis nesutampa su "labas", atspausdinkite žodį taip, kaip jis buvo įvestas.
 3. Sukurkite metodą kuris patikrina ar atsiųstas tekstas yra skaičius ir gražina skaičių (kaip int) ir atsakyma ar teisinga (is esmes sukurkite savo int.TryParse metoda) NEGALIMA NAUDOTI TRYPARSE
 
-### 2023-11-28 Class - ARRAY, CONDOTIONS, LINQ, LAMBDA, INHERITANCE
+### 2023-11-28 Class - ARRAY, CONDOTIONS, LINQ, LAMBDA, INHERITANCE, DICTIONARRIES
 
-1. 
-- Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius
+1. write if number is possitive TRUE/FALSE.
+4. write if text has spaces " ".
+5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius  ----------------------------------------------
 
 ### 2023-11-28 Evening Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 
