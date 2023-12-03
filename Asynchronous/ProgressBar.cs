@@ -10,10 +10,23 @@ namespace Asynchronous
     {
 
         static int progress { get; set; } = 0;
-        
-        public int Progres()
+
+        public void Progres()
         {
-            return ++progress;
+            for (int i = 0; i < 100; i++)
+            {
+                Task.Delay(1000).Wait();
+                ++progress;
+            }
+        }
+
+        public void ShowProgress()
+        {
+            while (true)
+            {
+                Task.Delay(3000).Wait();
+                Console.WriteLine(progress);
+            }
         }
     }
 }

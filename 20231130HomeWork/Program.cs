@@ -4,6 +4,8 @@
 using _20231130HomeWork.LINQ;
 using System.IO;
 using Bogus;
+using _20231130HomeWork.ASYNC;
+using System.Threading.Tasks;
 
 namespace _20231130HomeWork;
 
@@ -17,9 +19,12 @@ public class Program
 
     static void CreatFiles()
     {
+        Random rnd = new Random();
+
         for (int i = 0; i < 10; i++)
         {
-            string randomText = GenerateRandomText(50, faker);
+            int x = rnd.Next(10000, 500000);
+            string randomText = GenerateRandomText(x, faker);
             File.WriteAllText($@"C:\Users\v.senkus\Desktop\30HW\file{i}.txt", randomText);
         }
     }
@@ -79,21 +84,33 @@ public class Program
 
         //Generating files
 
-        //CreatFiles();
+        CreatFiles();
 
-        static void ReadFile(string filename)
+        static async Task Main()
         {
-            string text = File.ReadAllText($@"C:\Users\v.senkus\Desktop\30HW\{filename}.txt");
-                Console.WriteLine(text);
-        }
+            FileReader fileReader = new FileReader();
 
-        async Task AsyncRun()
-        {
+
+
+
+            List<Task<string>> tasks = new List<Task<string>>();
+    
             for (int i = 0; i < 10; i++)
             {
-                ReadFile($"file{i}");
+                string filename = $"file{i}.txt";
+                tasks.Add(fileReader.ReadFile(filename));
             }
+
+            while (tasks.Count > 0)
+            {
+                Task<string> finishedTask = await Task.WhenAny(tasks);
+                tasks.Remove(finishedTask);
+                string result = await finishedTask;
+                Console.WriteLine($"Result: {result}");
+            }
+
         }
 
+        Task.Run(async() => await Main());
     }
 }
