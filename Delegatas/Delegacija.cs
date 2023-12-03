@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+//paskaitos metu surasyti pavyzdziai, daugiausiai nevyke ir neimplementuoti Program.Main funcijoje (nepaleidziami).
 namespace Delegatas
 {
     internal class Delegacija

@@ -30,7 +30,7 @@ Papildomai: irasyti visus shopItem objektus i Faila. Palyginti ShopItemu tagus i
 
 1. write if number is possitive TRUE/FALSE.
 4. write if text has spaces " ".
-5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius - _**<span style="color:red">Nebaigta</span>.**_
+5. Parašykite metodą, kuris paduotame dvimačiame masyve rastų visus pasikartojančius skaičius.
 
 ### 2023-11-28 Homework - Using INTERFACES, SERIVCES, FILES - (Continues from 2023-11-27)
 _**<span style="color:red">Uzduoties kodas padidintas pagal funkcionaluma ir nebaigtas</span>.**_

@@ -32,6 +32,7 @@ Console.WriteLine(tekstas.HasSpace());
 int[,] masyvas = { { 1, 2, 3 }, { 2, 4, 1 } };
 DvigubasMasyvas dvigubasMasyvas = new DvigubasMasyvas();
 dvigubasMasyvas.RepeatingNumbers(masyvas);
+Console.WriteLine();
 
 //Inheritance
 

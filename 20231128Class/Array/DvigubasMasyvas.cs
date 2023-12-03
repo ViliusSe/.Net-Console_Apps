@@ -11,29 +11,36 @@ namespace _20231128Class.Array
         private List<int> repeaters = new List<int>();
         public void RepeatingNumbers(int[,] arr)
         {
+            foreach (int el in arr)
+                repeaters.Add(el);
+
+            repeaters.Sort();
+
+            for (int i = 0; i < repeaters.Count(); i++)
+            {
+                if (i-2 <= repeaters.Count() && repeaters[i] == repeaters[i++])
+                {
+                    repeaters.Remove(i);
+                    i--;
+                }
+            }
+
+            Console.WriteLine("repeating numbers:");
+            foreach (int el in repeaters)
+                Console.Write($"{el}, ");
+        }
+
+        //masyvo prasukimo for loope pavyzdys.
+        public void ListArray(int[,] arr)
+        {
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    int x = (arr[i, j]);
-
-                    for (int z = i; z < arr.GetLength(0); z++)
-                    {
-                        for (int h = j + 1; h < arr.GetLength(1) - 1; h++)
-                        {
-                            if (x == arr[z, h]) repeaters.Add(x);
-                        }
-
-                    }
+                    Console.WriteLine(arr[i, j]);
                 }
             }
-
-            foreach (int i in repeaters)
-            {
-                Console.WriteLine(i);
-            }
         }
-
     }
 }
 

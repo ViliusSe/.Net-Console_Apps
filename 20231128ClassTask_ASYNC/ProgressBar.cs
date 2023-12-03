@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2023_11_30_ClassTask
+namespace _20231128ClassTask_ASYNC
 {
     internal class ProgressBar
     {
